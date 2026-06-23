@@ -4,6 +4,56 @@
 
 ---
 
+## 🚀 快速开始
+
+### 📋 环境要求
+* **后端**：JDK 17+ 、Maven 3.8+
+* **数据库**：MySQL 8.0 、Redis 7.0
+* **前端**：Node.js 18+
+* **工具**：微信开发者工具
+
+### 💻 本地运行指南
+
+#### 1. 初始化数据库
+在 MySQL 客户端中创建数据库并执行初始化脚本：
+```sql
+source take-out.sql
+
+```
+
+#### 2. 修改配置文件
+
+打开后端开发环境配置文件，修改您的数据库与 Redis 连接地址：
+
+* **路径**：`springboot/server/src/main/resources/application-dev.yml`
+
+#### 3. 启动后端服务
+
+```bash
+cd springboot/server
+mvn clean install
+mvn spring-boot:run
+
+```
+
+#### 4. 启动管理端 (PC)
+
+```bash
+cd vue3
+npm install
+npm run dev
+
+```
+
+#### 5. 启动小程序端 (用户端)
+
+1. 打开 **微信开发者工具**。
+2. 导入项目，选择目录为项目的 `app/` 文件夹。
+
+```
+
+```
+
 ## 🛠 技术栈选型
 
 | 层级/组件 | 技术选型 | 核心作用 |
@@ -84,54 +134,4 @@
     * **异常率**：**0%**
 * **集成测试**：前后端全链路端到端（E2E）自动化测试全部通过。
 
----
 
-## 🚀 快速开始
-
-### 📋 环境要求
-* **后端**：JDK 17+ 、Maven 3.8+
-* **数据库**：MySQL 8.0 、Redis 7.0
-* **前端**：Node.js 18+
-* **工具**：微信开发者工具
-
-### 💻 本地运行指南
-
-#### 1. 初始化数据库
-在 MySQL 客户端中创建数据库并执行初始化脚本：
-```sql
-source take-out.sql
-
-```
-
-#### 2. 修改配置文件
-
-打开后端开发环境配置文件，修改您的数据库与 Redis 连接地址：
-
-* **路径**：`springboot/server/src/main/resources/application-dev.yml`
-
-#### 3. 启动后端服务
-
-```bash
-cd springboot/server
-mvn clean install
-mvn spring-boot:run
-
-```
-
-#### 4. 启动管理端 (PC)
-
-```bash
-cd vue3
-npm install
-npm run dev
-
-```
-
-#### 5. 启动小程序端 (用户端)
-
-1. 打开 **微信开发者工具**。
-2. 导入项目，选择目录为项目的 `app/` 文件夹。
-
-```
-
-```
