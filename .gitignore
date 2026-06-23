@@ -48,7 +48,7 @@ pnpm-debug.log*
 lerna-debug.log*
 *.tsbuildinfo
 
-# ========== 本地配置（含数据库密码、微信密钥，勿提交） ==========
+# ========== 本地配置 ==========
 **/application-dev.yml
 .env
 .env.*
